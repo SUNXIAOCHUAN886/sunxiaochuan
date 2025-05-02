@@ -23,14 +23,7 @@ local about = Window:MakeTab({
 about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
 about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
-
-local Tab =Window:MakeTab({
-Tab:AddButton({
-	Name = "复制作者QQ群",
-	Callback = function()
-     setclipboard("231798711")
-  	end
-})
+about:AddParagraph("作者qq群231798711")
 
 local Tab = Window:MakeTab({
 	Name = "惊喜大盲盒",
@@ -53,7 +46,7 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-	Name = "通用功能",
+	Name = "服务器功能啥的都在这里",
 	Icon = "rbxassetid://10527577695",
 	PremiumOnly = false
 })
@@ -89,5 +82,33 @@ Tab:AddButton({
   Name = "自然灾害执行该脚本",
   Callback = function()
     game.Players.LocalPlayer:Kick("进入作者群聊即可获得死铁轨脚本")
+  end
+})
+
+Tab:AddButton({
+  Name = "被遗弃脚本",
+  Callback = function()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/OWOWOWWOW/HTT/main/HT.lua")()
+  end
+})
+
+Tab:AddButton({
+  Name = "最强战场kj",
+  Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/L7WEmRth"))()
+  end
+})
+
+Tab:AddButton({
+  Name = "河北唐县",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Marco8642/science/ok/T%20ang%20County"))()
+  end
+})
+
+Tab:AddButton({
+  Name = "内脏与黑火药",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ChinaQY/Scripts/Main/GB"))()
   end
 })
