@@ -36,3 +36,49 @@ Tab:AddButton({
     game.Players.LocalPlayer:Kick("哈哈哈这是被踢出")
   end
 })
+
+local Tab = Window:MakeTab({
+	Name = "通用功能",
+	Icon = "rbxassetid://10527577695",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+  Name = "我撸撸撸撸撸撸撸撸（r6）",
+  Callback = function()
+    loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))()
+  end
+  
+})Tab:AddButton({
+  Name = "我撸撸撸撸撸撸撸撸（r15）",
+  Callback = function()
+    loadstring(game:HttpGet("https://pastefy.app/YZoglOyJ/raw"))()
+  end
+})
+
+Tab:AddButton({
+  Name = "黑洞脚本",
+  Callback = function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/aZjaAr6F'))()
+  end
+})
+
+Tab:AddButton({
+  Name = "飞行脚本",
+  Callback = function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\90\66\122\99\84\109\49\102\34\41\41\40\41\10")()
+  end
+})
+
+local Tab = Window:MakeTab({
+	Name = "死铁轨脚本",
+	Icon = "rbxassetid://10527577695",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+  Name = "高级版本",
+  Callback = function()
+    game.Players.LocalPlayer:Kick("由于该脚本在死铁轨执行会被ban,添加3598439173即可解锁脚本")
+  end
+})
