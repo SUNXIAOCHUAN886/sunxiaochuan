@@ -19,7 +19,7 @@ if isLocalPlayerWhitelisted then
         Text = "玩家:"..localPlayer.Name.."，检测完毕您是尊贵的笑川脚本用户，稍后会加载脚本",
         Duration = 7,
     })
-        localPlayer:Kick("至尊盲盒依旧是被踢出/.")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/SUNXIAOCHUAN886/sunxiaochuan/refs/heads/main/%E5%AD%99%E7%AC%91%E5%B7%9D.lua"))()
 else
-    localPlayer:Kick("你没有被加入白名单，请找3598439173购买")
+    localPlayer:Kick("你没有被加入白名单，请找3598439173加入")
 end
