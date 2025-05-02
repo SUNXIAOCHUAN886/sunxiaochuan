@@ -28,7 +28,7 @@ local Tab =Window:MakeTab({
 Tab:AddButton({
 	Name = "复制作者QQ群",
 	Callback = function()
-     setclipboard("929573644")
+     setclipboard("231798711")
   	end
 })
 
@@ -43,6 +43,13 @@ Tab:AddButton({
   Callback = function()
     game.Players.LocalPlayer:Kick("哈哈哈这是被踢出")
   end
+})
+
+Tab:AddButton({
+  Name = "这是什么呢..？",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IIIlll1ll1/Cracks/main/AdvancedLogic_Crack.lua"))()
+    end
 })
 
 local Tab = Window:MakeTab({
@@ -75,5 +82,12 @@ Tab:AddButton({
   Name = "飞行脚本",
   Callback = function()
     loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\90\66\122\99\84\109\49\102\34\41\41\40\41\10")()
+  end
+})
+
+Tab:AddButton({
+  Name = "自然灾害执行该脚本",
+  Callback = function()
+    game.Players.LocalPlayer:Kick("进入作者群聊即可获得死铁轨脚本")
   end
 })
