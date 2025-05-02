@@ -19,8 +19,7 @@ if isLocalPlayerWhitelisted then
         Text = "玩家:"..localPlayer.Name.."，检测完毕您是尊贵的笑川脚本用户，稍后会加载脚本",
         Duration = 7,
     })
-    script_key="PASTEKEYHERE";
-(loadstring or load)(game:HttpGet("https://getnative.cc/script/loader"))()
+        localPlayer:Kick("至尊盲盒依旧是被踢出/.")
 else
     localPlayer:Kick("你没有被加入白名单，请找3598439173购买")
 end
