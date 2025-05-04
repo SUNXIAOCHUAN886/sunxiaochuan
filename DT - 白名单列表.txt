@@ -1,6 +1,0 @@
-    White_List = {
-	         
-	"4v5n7n",
-
-	}
-return White_List
